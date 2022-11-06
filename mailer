@@ -1,0 +1,10 @@
+import smtplib
+session=smtplib.SMTP("smtp-mail.outlook.com",587)
+session.starttls()
+session.login("your hotmail/outlook mail","password")
+message="""
+write message
+"""
+for i in range(1,11):
+    session.sendmail('sender address','reciever address',message)
+session.quit()
