@@ -1,0 +1,6 @@
+import pyqrcode
+from pyqrcode import QRCode
+import png
+text="Hello This is my github id link :-https://github.com/Saxena456/PythonWorkshop.git"
+qrrr=pyqrcode.create(text)
+qrrr.png("githubqr.png")
