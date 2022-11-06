@@ -1,0 +1,7 @@
+import gtts
+import os
+from gtts import gTTS
+text="my name is prashant saxena ,,i am 17 years old ,, i live in shahjahanpur , ,i did my schooling from saint paul's inter college, and, am now pursuing my btech from future group of institute"
+audio=gTTS(text,lang='en')
+audio.save("myintroduction.mp3")
+os.system("myintroduction.mp3")
